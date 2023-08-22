@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Гедеонова Сансарка`,
     description: `Сайт Гедеона Янга, журналиста и публициста`,
-    author: `@gatsbyjs`,
+    author: `konvod93`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [

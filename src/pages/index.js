@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => {
         <h1 style={{ padding: `30px`, textAlign: `center` }}>
           {metadata.title}
         </h1>
+        <p style={{ textAlign: `center`, marginBottom: `25px`, fontStyle: `italic`, fontSize: `x-large`, fontWeight: `bolder`}}>{metadata.description}</p>
         <Row className="g-4" style={{marginBottom: `50px`}} >          
           <PostsList posts={posts} />
         </Row>
@@ -42,6 +43,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMarkdownRemark(
