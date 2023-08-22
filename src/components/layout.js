@@ -91,6 +91,8 @@ const Layout = ({ children }) => {
             {` `}
             developed
             {` `}
+            by
+            {` `}
             <a href="https://github.com/konvod93">konvod93</a>,
             {` `}
             <a href="https://github.com/konvod93/konvod-gatsby-static-cms-v2.git">source</a>

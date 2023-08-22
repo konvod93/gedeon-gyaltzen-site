@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <header>
     <Navbar className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand>Gatsby & Static CMS</Navbar.Brand>
+        <Navbar.Brand>{ siteTitle }</Navbar.Brand>
           <Nav className="me-auto">            
             <Nav.Link as={Link}
               to="/"
@@ -18,9 +18,9 @@ const Header = ({ siteTitle }) => (
               //   textDecoration: `none`,
               // }}
             >
-              Home
+              Главная
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>          
+            <Nav.Link as={Link} to="/about">Обо мне</Nav.Link>          
                       
           </Nav>        
       </Container>

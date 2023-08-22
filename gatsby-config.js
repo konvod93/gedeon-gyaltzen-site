@@ -9,8 +9,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Blog With Gatsby And Static CMS`,
-    description: `It is starter boilerplate for blog on Gatsby + Static CMS`,
+    title: `Гедеонова Сансарка`,
+    description: `Светопись взираем, клинописи читаем, Бесов и Богов развиджаем, Письмена ваяем, Брашну творим, Жизнь обживаем, аАза Есмь постигаем`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -66,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-          shortname: `konvodsite`
+          shortname: `gedeonsite`
       }
   },           
     `gatsby-plugin-static-cms`,     

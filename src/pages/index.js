@@ -10,13 +10,14 @@ import PostsList from "../components/PostsList"
 const IndexPage = ({ data }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  const metadata = data.site.siteMetadata
 
   return (
     <Layout>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <Container>
         <h1 style={{ padding: `30px`, textAlign: `center` }}>
-          Blog about travelings with Static CMS & Gatsby
+          {metadata.title}
         </h1>
         <Row className="g-4" style={{marginBottom: `50px`}} >          
           <PostsList posts={posts} />
@@ -32,7 +33,7 @@ const IndexPage = ({ data }) => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Главная" />
 
 export default IndexPage
 
