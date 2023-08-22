@@ -1,0 +1,34 @@
+backend:
+ name: git-gateway
+ branch: main
+
+media_folder: static/images
+public_folder: ../../static/images/
+
+collections: 
+ - name: "travel-packages"
+   preview: false
+   label: "Travel Packages"
+   folder: "content/travel-packages"
+   create: true
+   slug: "{{slug}}"
+   fields:
+    - { label: "Location Title", name: "title", widget: "string" }
+    - { label: "Travel Dates", name: "travel-dates", widget: "string" }
+    - { label: "Publication Date", name: "date", widget: "datetime", format: "yyyy-MM-dd" }
+    - { label: "Post Url", name: "url", widget: "string" }
+    - { label: "Post Category", name: "category", widget: "string" }
+    - { label: "Tags", name: "tags", widget: "list" }
+    - { label: "Featured Image", name: featured-image, widget: image }
+    - { label: "Body", name: "body", widget: "markdown" }
+ - name: "pages"
+   preview: false
+   label: "Pages"
+   folder: "content/pages"
+   create: true
+   slug: "{{slug}}"
+   fields:
+   - { label: "Page Title", name: "title", widget: "string" }
+   - { label: "Slug", name: "slug", widget: "string" }
+   - { label: "Featured Image", name: featured-image, widget: image } 
+   - { label: "Body", name: "body", widget: "markdown" }

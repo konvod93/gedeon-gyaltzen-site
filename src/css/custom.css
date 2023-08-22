@@ -1,0 +1,102 @@
+body {
+    background-image: url(../images/4853433.jpg);
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-body {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;    
+    
+}
+
+.card-body p:last-of-type {
+    margin-bottom: 0;   
+}
+
+.card {
+  box-shadow: 1px 1px 3px black; 
+}
+
+.card:hover {
+  box-shadow: 2px 2px 8px black; 
+}
+
+.postbox {
+  background-color: rgba(240, 248, 255, 0.7);
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.postbox:hover {
+  box-shadow: 2px 2px 8px black; 
+}
+
+
+@font-face {
+    font-family: "Roboto";   /*Can be any text*/
+    src: local("Roboto"),
+      url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Roboto";   /*Can be any text*/
+    src: local("Roboto"),
+      url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Roboto";   /*Can be any text*/
+    src: local("Roboto"),
+      url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: "Roboto";   /*Can be any text*/
+    src: local("Roboto"),
+      url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }  
+  @font-face {
+    font-family: "Roboto";   /*Can be any text*/
+    src: local("Roboto"),
+      url("../fonts/Roboto-Italic.ttf") format("truetype");
+      font-style: italic;
+  }  
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color:darkgrey;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto';
+    
+    font-weight: 400;
+    color: #3d3d3d   
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: .7
+}
+
