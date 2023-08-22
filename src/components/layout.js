@@ -18,6 +18,7 @@ import '../fonts/Roboto-Regular.ttf';
 import { SocialIcon } from "react-social-icons";
 import styled from "styled-components";
 import { socials } from "../data/socdata"
+import { Button } from "react-bootstrap";
 
 
 const Footer = styled.footer`
@@ -56,8 +57,8 @@ const Layout = ({ children }) => {
   `)  
   
   const socIconStyle = {
-    height: 20,
-    width: 20,
+    height: 30,
+    width: 30,
     margin: 5,    
   }
 
@@ -79,12 +80,20 @@ const Layout = ({ children }) => {
             )
           })}
         </SocBlock>
+        <div style={{display: `flex`, justifyContent: `center`, marginTop: `15px`}}>
+        <a href="mailto:newsmake@gmail.com"><Button variant="primary">Написать мне</Button></a>
+        </div>
         <CopyWright>
           <div style={{ textAlign: `center` }}>
             © {new Date().getFullYear()} &middot; Built with
             {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a>
+            <a href="https://www.gatsbyjs.com">Gatsby</a>,
             {` `}
+            developed
+            {` `}
+            <a href="https://github.com/konvod93">konvod93</a>,
+            {` `}
+            <a href="https://github.com/konvod93/konvod-gatsby-static-cms-v2.git">source</a>
           </div>
           <div
             style={{ textAlign: `end`, fontSize: `x-small`, marginTop: `10px` }}

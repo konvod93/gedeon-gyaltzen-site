@@ -44,7 +44,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {fields: {slug: {glob: "/travel-packages/*/"}}}
+      filter: {fields: {slug: {glob: "/my-articles/*/"}}}
       sort: {frontmatter: {date: DESC}}
       ) {
     nodes {
@@ -55,8 +55,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         category        
-        title
-        travel_dates
+        title        
         date(formatString: "MMM DD, YYYY ")
         featured_image {
           childImageSharp {

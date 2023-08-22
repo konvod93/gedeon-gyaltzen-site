@@ -6,15 +6,14 @@ media_folder: static/images
 public_folder: ../../static/images/
 
 collections: 
- - name: "travel-packages"
+ - name: "my-articles"
    preview: false
-   label: "Travel Packages"
-   folder: "content/travel-packages"
+   label: "My Articles"
+   folder: "content/my-articles"
    create: true
    slug: "{{slug}}"
    fields:
-    - { label: "Location Title", name: "title", widget: "string" }
-    - { label: "Travel Dates", name: "travel-dates", widget: "string" }
+    - { label: "Location Title", name: "title", widget: "string" }   
     - { label: "Publication Date", name: "date", widget: "datetime", format: "yyyy-MM-dd" }
     - { label: "Post Url", name: "url", widget: "string" }
     - { label: "Post Category", name: "category", widget: "string" }

@@ -24,12 +24,9 @@ const SinglePost = ({ data }) => {
           <h1>{title}</h1>
           <div>
             <GatsbyImage image={img} alt={title} />
-          </div>
-          <div style={{ marginTop: "20px", fontStyle: "italic" }}>
-            <p>{data.markdownRemark.frontmatter.travel_dates}</p>
-          </div>
+          </div>         
           <div>
-            <p style={{ fontStyle: "italic" }}>
+            <p style={{ fontStyle: "italic", marginTop: `10px`}}>
               Category: <Link to={`/category/${category}`}>{category}</Link>
             </p>
           </div>
@@ -65,8 +62,7 @@ query PostQuery($id: String!) {
     }
     frontmatter {
       title
-      category
-      travel_dates
+      category      
       date(formatString: "MMM DD, YYYY ")
       featured_image {
         childImageSharp {

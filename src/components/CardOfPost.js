@@ -6,10 +6,6 @@ import { Card } from "react-bootstrap"
 import TagsList from "./TagsList";
 import styled from "styled-components";
 
-const Dates = styled.p`
-  font-family: "Roboto";
-  font-style: italic;
-`
 const Category = styled.p`
   font-family: "Roboto";
   font-weight: 500;
@@ -31,8 +27,7 @@ const CardOfPost = ({ frontmatter, fields }) => {
         className="card-img-top"
       />
       <Card.Body>
-        <Card.Title>{frontmatter.title}</Card.Title>
-        <Dates>{frontmatter.travel_dates}</Dates>
+        <Card.Title>{frontmatter.title}</Card.Title>        
         <Category>
           Category:{" "}
           <CatLink to={`/category/${frontmatter.category}`}>
