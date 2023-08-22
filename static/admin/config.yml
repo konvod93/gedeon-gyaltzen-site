@@ -13,7 +13,7 @@ collections:
    create: true
    slug: "{{slug}}"
    fields:
-    - { label: "Location Title", name: "title", widget: "string" }   
+    - { label: "Title", name: "title", widget: "string" }   
     - { label: "Publication Date", name: "date", widget: "datetime", format: "yyyy-MM-dd" }
     - { label: "Post Url", name: "url", widget: "string" }
     - { label: "Post Category", name: "category", widget: "string" }
