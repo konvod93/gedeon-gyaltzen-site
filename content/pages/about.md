@@ -1,5 +1,5 @@
 ---
-title: About
+title: Обо мне
 slug: /about
 featured-image: ../../static/images/traveler.jpg
 ---
