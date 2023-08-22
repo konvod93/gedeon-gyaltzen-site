@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Гедеонова Сансарка`,
-    description: `Светопись взираем, клинописи читаем, Бесов и Богов развиджаем, Письмена ваяем, Брашну творим, Жизнь обживаем, аАза Есмь постигаем`,
+    description: `Сайт Гедеона Янга, журналиста и публициста`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
