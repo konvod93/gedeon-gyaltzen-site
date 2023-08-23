@@ -5,9 +5,14 @@ export const socials = [
       id: "0",
     },
     {
+      network: "twitter",
+      url: "https://twitter.com",
+      id: "1", 
+    },
+    {
       network: "telegram",
       url: "https://t.me/GedeonovaSamsara",
-      id: "1"
+      id: "2"
     },
        
     
